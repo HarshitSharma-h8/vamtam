@@ -2,27 +2,123 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-white text-black">
 
-  <head>
-    <title>Star Wars Characters</title>
-    <link rel="stylesheet" href="/assets/styles/index.css">
-  </head>
+<head>
+  <title>Star Wars Characters</title>
+  <link rel="stylesheet" href="/assets/styles/index.css">
+  <script src="/assets/javascripts/index.js" defer></script>
 
-  <body>
-    <div class="container mx-auto flex flex-col justify-center items-center">
-      <h1 class="text-8xl text-yellow-600 font-bold mt-12 mb-6">Star Wars Characters</h1>
-      <ul>
-        <li class="text-lg text-green-600">Luke Skywalker</li>
-        <li class="text-lg">C-3PO</li>
-        <li class="text-lg">R2-D2</li>
-        <li class="text-lg">Darth Vader</li>
-        <li class="text-lg">Leia Organa</li>
-        <li class="text-lg">Owen Lars</li>
-        <li class="text-lg">Beru Whitesun lars</li>
-        <li class="text-lg">R5-D4</li>
-        <li class="text-lg">Biggs Darklighter</li>
-        <li class="text-lg">Obi-Wan Kenobi</li>
+
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+    href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+</head>
+
+<body>
+  <!-- Top Sticky Bar -->
+  <div class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class=" mx-auto flex items-center justify-between px-4 py-2 ">
+      <!-- Left: Logo + Title -->
+      <div class="flex items-center gap-3  h-full">
+        <div class="border-r-2 border-gray-500">LAW</div>
+        <div class="hidden sm:block ">
+          <span class=" font-montserrat  font-medium ">Lawyer</span>
+          <span class="text-gray-500 text-[12px] font-montserrat text-primary">– Attorneys & Legal Office WordPress
+            Theme</span>
+        </div>
+      </div>
+
+      <!-- Right: Buttons -->
+      <div class="max-w-7xl flex items-center gap-3 ">
+
+        <button class="hidden md:flex items-center gap-2 border rounded px-3 py-1">
+          <span><i class="fa-solid fa-crown"></i></span> Premium Services
+        </button>
+        <button class="bg-purple-600 text-white px-4 py-1 rounded">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Section -->
+  <div class="px-4 py-3 bg-white  text-center border-b">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4">
+      <span class="text-gray-500 hidden md:block">CALL US: <span class="text-primary">715.387.5006</span></span>
+      <span class="text-gray-500 hidden md:block"><i class="fa-solid fa-comments"></i> <span class="text-primary">REQUEST A FREE CONSULTATION → </span> <i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <div>
+        <h1 class="text-2xl font-bold tracking-wide">LAWYER <span class="text-primary">ATTORNEY</span></h1>
+        <p class="text-sm text-gray-500 text-center font-semibold">PERSONAL INJURY ATTORNEY</p>
+      </div>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium ">
+        <li><a href="#" class="text-primary">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Attorneys</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Practice Areas</a></li>
+        <li><a href="#">Q&A</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <ul class="flex flex-col space-y-3 font-medium">
+        <li><a href="#" class="text-primary">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Attorneys</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Practice Areas</a></li>
+        <li><a href="#">Q&A</a></li>
+        <li><a href="#">Contacts</a></li>
       </ul>
     </div>
-  </body>
+  </nav>
+
+  <!-- Dummy Content -->
+  <div class="max-w-4xl mx-auto p-6 space-y-6">
+    <p class="text-gray-600">Scroll down to see sticky top bar effect...</p>
+    <div class="h-[2000px] bg-gradient-to-b from-gray-100 to-gray-300"></div>
+  </div>
+
+  
+</body>
 
 </html>

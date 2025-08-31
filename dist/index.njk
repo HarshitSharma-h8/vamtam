@@ -1,0 +1,95 @@
+---
+title: Star Wars Characters
+---
+
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-black">
+
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/assets/styles/index.css">
+    <script src="/assets/javascripts/index.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Top Sticky Bar -->
+  <div class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <!-- Left: Logo + Title -->
+      <div class="flex items-center gap-3">
+        <img src="https://dummyimage.com/40x40/000/fff" alt="Logo" class="w-10 h-10">
+        <div class="hidden sm:block">
+          <span class="font-bold">Lawyer</span>
+          <span class="text-gray-500">– Attorneys & Legal Office WordPress Theme</span>
+        </div>
+      </div>
+
+      <!-- Right: Buttons -->
+      <div class="flex items-center gap-3">
+        <span class="text-gray-500 hidden md:block">CALL US: <span class="text-orange-500">715.387.5006</span></span>
+        <button class="hidden md:flex items-center gap-2 border rounded px-3 py-1">
+          <span>👑</span> Premium Services
+        </button>
+        <button class="bg-purple-600 text-white px-4 py-1 rounded">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Section -->
+  <div class="bg-white py-6 text-center border-b">
+    <h1 class="text-2xl font-bold tracking-wide">LAWYER <span class="text-yellow-700">ATTORNEY</span></h1>
+    <p class="text-sm text-gray-500">PERSONAL INJURY ATTORNEY</p>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#" class="text-yellow-700">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Attorneys</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Practice Areas</a></li>
+        <li><a href="#">Q&A</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <ul class="flex flex-col space-y-3 font-medium">
+        <li><a href="#" class="text-yellow-700">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Attorneys</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Practice Areas</a></li>
+        <li><a href="#">Q&A</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Dummy Content -->
+  <div class="max-w-4xl mx-auto p-6 space-y-6">
+    <p class="text-gray-600">Scroll down to see sticky top bar effect...</p>
+    <div class="h-[2000px] bg-gradient-to-b from-gray-100 to-gray-300"></div>
+  </div>
+
+  {# <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script> #}
+  </body>
+
+</html>

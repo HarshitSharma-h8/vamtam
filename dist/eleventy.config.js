@@ -10,11 +10,13 @@ export default function (eleventyConfig) {
   // Passthrough copy
   eleventyConfig.setTemplateFormats(["md", "njk", "html"]);
 
-  eleventyConfig.addPassthroughCopy("src/assets/img");
-  eleventyConfig.addPassthroughCopy("src/assets/javascripts");
+  eleventyConfig.addPassthroughCopy("src");
+  eleventyConfig.addPassthroughCopy("src/resources/style");
+  eleventyConfig.addPassthroughCopy("src/resources/javascript");
 
-  eleventyConfig.addWatchTarget("./src/assets/javascripts/");
-  // eleventyConfig.addWatchTarget("./src/resources/schemas/");
+  eleventyConfig.addWatchTarget("./src/resources/style/");
+  eleventyConfig.addWatchTarget("./src/resources/javascript/");
+  eleventyConfig.addWatchTarget("./src/resources/schemas/");
 
 
   //compile tailwind before eleventy processes the files
